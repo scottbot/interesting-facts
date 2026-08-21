@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="{{ site.Language.LanguageCode }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.Params.description }}">
+    <title>{{ site.Title }}</title>
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+    <script src="{{ "js/random-fact.js" | relURL }}" defer></script>
+  </head>
+  <body>
+    <main>
+      <figure id="fact-card" hidden>
+        <blockquote id="fact"></blockquote>
+        <figcaption>
+          <span id="author-name"></span>
+          <a id="author-handle" rel="noreferrer"></a>
+        </figcaption>
+      </figure>
+      <noscript>This page needs JavaScript to choose a random fact.</noscript>
+    </main>
+  </body>
+</html>

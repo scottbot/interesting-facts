@@ -1,0 +1,65 @@
+:root {
+  color-scheme: light;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f6f2;
+  color: #191919;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: clamp(1.5rem, 6vw, 5rem);
+}
+
+figure {
+  width: min(48rem, 100%);
+  margin: 0;
+}
+
+blockquote {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.8rem, 5vw, 3.6rem);
+  line-height: 1.16;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+  white-space: pre-line;
+}
+
+figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.75rem;
+  margin-top: clamp(1.5rem, 4vw, 2.5rem);
+  color: #5b5b5b;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+#author-name {
+  font-weight: 700;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 0.18em;
+}
+
+a:hover,
+a:focus-visible {
+  color: #0057b8;
+}
+
+noscript {
+  color: #5b5b5b;
+}
